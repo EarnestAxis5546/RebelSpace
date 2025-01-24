@@ -1,0 +1,6 @@
+# File: Assets/Config/config.yaml
+
+Entities:
+  - Prototype: "Assets/Prototypes/PlayerPrototype.yaml"
+  - Prototype: "Assets/Prototypes/floorPrototype.yaml"
+  - Prototype: "Assets/Prototypes/ItemPrototype.yaml"

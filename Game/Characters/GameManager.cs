@@ -1,26 +1,34 @@
+
+
+using System;
 using System.Collections.Generic;
+using RebelSpace.Engine;
+using RebelSpace.Engine.Config;
 
-public class GameManager
+namespace RebelSpace.Game.Characters
 {
-    private List<GameObject> gameObjects = new List<GameObject>();
-
-    public void Initialize()
+    public class GameManager
     {
-        // Load and initialize game objects from config
-        var entities = ConfigLoader.LoadEntities("Assets/Config/config.yaml");
-        foreach (var entity in entities)
+        private List<GameObject> gameObjects = new List<GameObject>();
+
+        public void Initialize()
         {
-            // Initialize game objects based on loaded entities
-            // Example: gameObjects.Add(new GameObject(...));
+            // Load and initialize game objects from config
+            var entities = ConfigLoader.LoadEntities("Assets/Config/config.yaml");
+            foreach (var entity in entities)
+            {
+                // Initialize game objects based on loaded entities
+                // Example: gameObjects.Add(new GameObject(...));
+            }
         }
-    }
 
-    public void Update()
-    {
-        // Update all game objects
-        foreach (var gameObject in gameObjects)
+        public void Update()
         {
-            gameObject.Update();
+            // Update all game objects
+            foreach (var gameObject in gameObjects)
+            {
+                gameObject.Update();
+            }
         }
     }
 }
