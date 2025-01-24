@@ -1,4 +1,4 @@
-// File: Engine/Entity.cs
+
 using System.Collections.Generic;
 
 namespace RebelSpace.Engine
