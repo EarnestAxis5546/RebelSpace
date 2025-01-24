@@ -1,10 +1,18 @@
-using System;
 
-public class Program
+using System;
+using System.Windows.Forms;
+
+namespace RebelSpace
 {
-    public static void Main(string[] args)
+    static class Program
     {
-        GameEngine gameEngine = new GameEngine();
-        gameEngine.Run();
+        [STAThread]
+        static void Main()
+        {
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Renderer(800, 600));
+        }
     }
 }
