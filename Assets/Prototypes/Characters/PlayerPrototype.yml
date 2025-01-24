@@ -1,0 +1,15 @@
+id: 1
+name: "Player"
+components:
+  - type: "PositionComponent"
+  x: 0
+  y: 0
+  - type: "VelocityComponent"
+  x: 0
+  y: 0
+  - type: "SpriteComponent"
+    texture: "Assets/TExtures/Characters/Player.png"
+  - type: "VisionComponent"
+    range: 5
+  - type: "HelathComponent"
+    health: 100
