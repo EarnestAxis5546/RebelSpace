@@ -1,6 +1,6 @@
-#**RebelSpace**
+# RebelSpace
 
-# Project License and Information
+## Project License and Information
 
 This project is created on a voluntary basis and is intended for educational and personal use.
 
