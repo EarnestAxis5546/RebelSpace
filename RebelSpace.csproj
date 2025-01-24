@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>false</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>RebelSpace</RootNamespace>
+    <AssemblyName>RebelSpace</AssemblyName>
+    <StartupObject>RebelSpace.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="YamlDotNet" Version="12.0.2" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Win32.SystemEvents" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Assets\**\*.cs" />
+    <Compile Update="Engine\**\*.cs" />
+    <Compile Update="Game\**\*.cs" />
+  </ItemGroup>
+
+</Project>
