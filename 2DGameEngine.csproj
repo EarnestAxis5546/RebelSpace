@@ -5,9 +5,9 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>false</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
-    <RootNamespace>2DGameEngine</RootNamespace>
-    <AssemblyName>2DGameEngine</AssemblyName>
-    <StartupObject>Program</StartupObject>
+    <RootNamespace>RebelSpace</RootNamespace>
+    <AssemblyName>RebelSpace</AssemblyName>
+    <StartupObject>RebelSpace.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
