@@ -1,4 +1,4 @@
-# RebelSpace
+# RebelSpace 🌌
 
 ## Project License and Information
 
