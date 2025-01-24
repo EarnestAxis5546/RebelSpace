@@ -8,7 +8,7 @@ This project is created on a voluntary basis and is intended for educational and
 
 - **Project Name**: [RebelSpace]
 - **GitHub Repository**: [[GitHub Repository URL](https://github.com/EarnestAxis5546/RebelSpace/)]
-- **Discord Link**: [Discord Invite Link]
+- **Discord Link**: [[Discord Invite Link](https://discord.gg/YQGK55KX2z)]
 
 ---
 
@@ -44,7 +44,7 @@ Contributions to this project are welcome. By contributing, you agree that your 
 
 ## 🔗 Additional Links
 
-- **Discord**: [Discord Invite Link]
+- **Discord**: [[Discord Invite Link](https://discord.gg/YQGK55KX2z)]
 - **Documentation**: [Documentation URL]
 - **Contact**: [wilandpoland@gmail.com]
 
