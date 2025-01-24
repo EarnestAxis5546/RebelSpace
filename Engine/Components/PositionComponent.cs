@@ -1,5 +1,9 @@
-public class PositionComponent : IComponent
+
+namespace RebelSpace.Engine.Components
 {
-    public float X { get; set; }
-    public float Y { get; set; }
+    public class PositionComponent : IComponent
+    {
+        public float X { get; set; }
+        public float Y { get; set; }
+    }
 }

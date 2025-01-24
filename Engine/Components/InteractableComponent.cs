@@ -1,5 +1,8 @@
 
-public class InteractableComponent : IComponent
+namespace RebelSpace.Engine.Components
 {
-    public string Action { get; set; }
+    public class InteractableComponent : IComponent
+    {
+        public string Action { get; set; }
+    }
 }

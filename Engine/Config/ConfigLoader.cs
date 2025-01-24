@@ -5,35 +5,38 @@ using System.IO;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
-public class ConfigLoader
+namespace RebelSpace.Engine.Config
 {
-    public static List<Entity> LoadEntities(string path)
+    public class ConfigLoader
     {
-        var deserializer = new DeserializerBuilder()
-            .WithNamingConvention(CamelCaseNamingConvention.Instance)
-            .Build();
-
-        var yaml = File.ReadAllText(path);
-        var config = deserializer.Deserialize<Config>(yaml);
-
-        var entities = new List<Entity>();
-        foreach (var prototypePath in config.Entities)
+        public static List<Entity> LoadEntities(string path)
         {
-            var prototypeYaml = File.ReadAllText(prototypePath.Prototype);
-            var entity = deserializer.Deserialize<Entity>(prototypeYaml);
-            entities.Add(entity);
+            var deserializer = new DeserializerBuilder()
+                .WithNamingConvention(CamelCaseNamingConvention.Instance)
+                .Build();
+
+            var yaml = File.ReadAllText(path);
+            var config = deserializer.Deserialize<Config>(yaml);
+
+            var entities = new List<Entity>();
+            foreach (var prototypePath in config.Entities)
+            {
+                var prototypeYaml = File.ReadAllText(prototypePath.Prototype);
+                var entity = deserializer.Deserialize<Entity>(prototypeYaml);
+                entities.Add(entity);
+            }
+
+            return entities;
         }
-
-        return entities;
     }
-}
 
-public class Config
-{
-    public List<EntityPrototype> Entities { get; set; }
-}
+    public class Config
+    {
+        public List<EntityPrototype> Entities { get; set; }
+    }
 
-public class EntityPrototype
-{
-    public string Prototype { get; set; }
+    public class EntityPrototype
+    {
+        public string Prototype { get; set; }
+    }
 }

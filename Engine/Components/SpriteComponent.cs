@@ -1,5 +1,8 @@
 
-public class SpriteComponent : IComponent
+namespace RebelSpace.Engine.Components
 {
-    public string Texture { get; set; }
+    public class SpriteComponent : IComponent
+    {
+        public string Texture { get; set; }
+    }
 }

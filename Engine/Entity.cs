@@ -1,14 +1,17 @@
 // File: Engine/Entity.cs
 using System.Collections.Generic;
 
-public class Entity
+namespace RebelSpace.Engine
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public List<IComponent> Components { get; set; }
-
-    public Entity()
+    public class Entity
     {
-        Components = new List<IComponent>();
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public List<IComponent> Components { get; set; }
+
+        public Entity()
+        {
+            Components = new List<IComponent>();
+        }
     }
 }

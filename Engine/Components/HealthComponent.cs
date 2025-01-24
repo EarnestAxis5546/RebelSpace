@@ -1,5 +1,8 @@
 
-public class HealthComponent : IComponent
+namespace RebelSpace.Engine.Components
 {
-    public int Health { get; set; }
+    public class HealthComponent : IComponent
+    {
+        public int Health { get; set; }
+    }
 }

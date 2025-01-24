@@ -1,5 +1,8 @@
 
-public class VisionComponent : IComponent
+namespace RebelSpace.Engine.Components
 {
-    public float Range { get; set; }
+    public class VisionComponent : IComponent
+    {
+        public float Range { get; set; }
+    }
 }

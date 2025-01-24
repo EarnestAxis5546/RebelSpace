@@ -1,6 +1,9 @@
 
-public class VelocityComponent : IComponent
+namespace RebelSpace.Engine.Components
 {
-    public float X { get; set; }
-    public float Y { get; set; }
+    public class VelocityComponent : IComponent
+    {
+        public float X { get; set; }
+        public float Y { get; set; }
+    }
 }

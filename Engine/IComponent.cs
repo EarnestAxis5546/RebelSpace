@@ -1,2 +1,5 @@
 
-public interface IComponent { }
+namespace RebelSpace.Engine
+{
+    public interface IComponent { }
+}
