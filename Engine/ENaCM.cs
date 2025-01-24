@@ -1,40 +1,22 @@
-public class Entity
-{
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public List<IComponent> Components { get; set; }
-}
+using System.Collections.Generic;
 
-public interface IComponent { }
-
-public class PositionComponent : IComponent
+// Assuming ENaCM is a class, here's a basic structure:
+public class ENaCM
 {
-    public float X { get; set; }
-    public float Y { get; set; }
-}
+    private List<string> items;
 
-public class VelocityComponent : IComponent
-{
-    public float X { get; set; }
-    public float Y { get; set; }
-}
+    public ENaCM()
+    {
+        items = new List<string>();
+    }
 
-public class SpriteComponent : IComponent
-{
-    public string Texture { get; set; }
-}
+    public void AddItem(string item)
+    {
+        items.Add(item);
+    }
 
-public class VisionComponent : IComponent
-{
-    public float Range { get; set; }
-}
-
-public class HealthComponent : IComponent
-{
-    public int Health { get; set; }
-}
-
-public class InteractableComponent : IComponent
-{
-    public string Action { get; set; }
+    public List<string> GetItems()
+    {
+        return items;
+    }
 }
