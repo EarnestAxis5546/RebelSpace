@@ -8,18 +8,32 @@ namespace RebelSpace
     {
         private TileMap tileMap;
         private Player player;
+        private string serverAddress;
 
-        public GameWindow()
+        public GameWindow(string serverAddress)
         {
-            this.Text = "RebelSpace - Version 0.1 AL";
+            this.serverAddress = serverAddress;
+            this.Text = $"RebelSpace - Connected to {serverAddress}";
             this.ClientSize = new System.Drawing.Size(800, 600);
             this.StartPosition = FormStartPosition.CenterScreen;
-            this.DoubleBuffered = true; // Для сглаживания графики
+            this.DoubleBuffered = true; // For smoother graphics
 
-            tileMap = new TileMap();
+            // Create the "Test Dev" map with a 10x10 grid of tiles, each 50x50 pixels
+            tileMap = new TileMap("Test Dev", 10, 10, 50);
             player = new Player(100, 450, 50, 50, Color.Blue, 10);
 
+            // Add logic to connect to the server
+            ConnectToServer();
+
             this.KeyDown += new KeyEventHandler(OnKeyDown);
+        }
+
+        private void ConnectToServer()
+        {
+            // Logic to connect to the server
+            // Example: using sockets to establish a connection
+            // In this example, it's just a message box
+            MessageBox.Show($"Connected to server: {serverAddress}");
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -42,15 +56,7 @@ namespace RebelSpace
                     player.MoveRight();
                     break;
             }
-            Invalidate(); // Перерисовать окно
-        }
-
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GameWindow());
+            Invalidate(); // Redraw the window
         }
     }
 }

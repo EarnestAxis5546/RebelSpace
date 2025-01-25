@@ -5,15 +5,19 @@ namespace RebelSpace
 {
     public class TileMap
     {
+        public string Name { get; private set; }
         private List<Tile> tiles = new List<Tile>();
 
-        public TileMap()
+        public TileMap(string name, int width, int height, int tileSize)
         {
-            // Создание платформы из тайлов
-            int tileSize = 50;
-            for (int i = 0; i < 16; i++)
+            Name = name;
+            // Create the map using tiles
+            for (int x = 0; x < width; x++)
             {
-                tiles.Add(new Tile(i * tileSize, 500, tileSize, tileSize, Color.Brown));
+                for (int y = 0; y < height; y++)
+                {
+                    tiles.Add(new Tile(x * tileSize, y * tileSize, tileSize, tileSize, Color.Brown));
+                }
             }
         }
 

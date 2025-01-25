@@ -1,8 +1,6 @@
-// File: Launcher.cs
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using RebelSpace.Engine; // Добавьте эту строку
 
 namespace RebelSpace
 {
@@ -10,11 +8,11 @@ namespace RebelSpace
     {
         private ComboBox serverList;
         private Button connectButton;
-        private List<string> servers; // Список серверов
+        private List<string> servers; // List of servers
 
         public Launcher()
         {
-            // Инициализация списка серверов
+            // Initialize the list of servers
             servers = new List<string>
             {
                 "Server 1 - 192.168.1.1",
@@ -27,37 +25,37 @@ namespace RebelSpace
 
         private void InitializeComponents()
         {
-            // Настройка окна лаунчера
+            // Configure the launcher window
             this.Text = "RebelSpace Launcher";
             this.Size = new System.Drawing.Size(400, 200);
 
-            // Создание и настройка выпадающего списка серверов
+            // Create and configure the server dropdown list
             serverList = new ComboBox();
             serverList.DataSource = servers;
             serverList.Location = new System.Drawing.Point(50, 50);
             serverList.Width = 300;
 
-            // Создание и настройка кнопки подключения
+            // Create and configure the connect button
             connectButton = new Button();
             connectButton.Text = "Connect";
             connectButton.Location = new System.Drawing.Point(150, 100);
             connectButton.Click += ConnectButton_Click;
 
-            // Добавление элементов на форму
+            // Add components to the form
             this.Controls.Add(serverList);
             this.Controls.Add(connectButton);
         }
 
         private void ConnectButton_Click(object sender, EventArgs e)
         {
-            // Получение выбранного сервера
+            // Get the selected server
             string selectedServer = serverList.SelectedItem.ToString();
             MessageBox.Show($"Connecting to {selectedServer}...");
 
-            // Здесь можно добавить логику подключения к серверу и запуску игры
-            // Например:
-            GameEngine gameEngine = new GameEngine(selectedServer);
-            gameEngine.Run();
+            // Launch the main game window with the selected server
+            var gameWindow = new GameWindow(selectedServer);
+            gameWindow.Show();
+            this.Hide();
         }
 
         [STAThread]
