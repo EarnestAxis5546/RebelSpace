@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RebelSpace")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+825edcb72666672e1a71379ba33db555faf49acf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7e9c053b1208b9aba29592dcf1a590bf10c8ef5")]
 [assembly: System.Reflection.AssemblyProductAttribute("RebelSpace")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RebelSpace")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
