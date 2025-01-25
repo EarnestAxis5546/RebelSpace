@@ -1,18 +1,20 @@
-# Project License and Information
+# RebelSpace 🌌
+
+## Project License and Information
 
 This project is created on a voluntary basis and is intended for educational and personal use.
 
 ---
 
-## 🚀 Project Information
+### 🚀 Project Information
 
 - **Project Name**: [RebelSpace]
 - **GitHub Repository**: [[GitHub Repository URL](https://github.com/EarnestAxis5546/RebelSpace/)]
-- **Discord Link**: [Discord Invite Link]
+- **Discord Link**: [[Discord Invite Link](https://discord.gg/YQGK55KX2z)]
 
 ---
 
-## 📜 License
+### 📜 License
 
 MIT License
 
@@ -42,15 +44,15 @@ Contributions to this project are welcome. By contributing, you agree that your 
 
 ---
 
-## 🔗 Additional Links
+### 🔗 Additional Links
 
-- **Discord**: [Discord Invite Link]
+- **Discord**: [[Discord Invite Link](https://discord.gg/YQGK55KX2z)]
 - **Documentation**: [Documentation URL]
 - **Contact**: [wilandpoland@gmail.com]
 
 ---
 
-## 📚 Acknowledgements
+### 📚 Acknowledgements
 
 This project uses the following libraries and resources, which are subject to their respective licenses:
 
@@ -73,7 +75,7 @@ Please ensure that you comply with the licenses of these libraries and resources
 
 ---
 
-## 📄 Necessary Licenses
+### 📄 Necessary Licenses
 
 This project includes various licenses for different components. Here is a list of the licenses used:
 
