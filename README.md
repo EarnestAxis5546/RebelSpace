@@ -1,4 +1,4 @@
-# RebelSpace 🌌
+# RS 1.11aq 🌌
 
 ## Project License and Information
 
@@ -8,8 +8,8 @@ This project is created on a voluntary basis and is intended for educational and
 
 ### 🚀 Project Information
 
-- **Project Name**: [RebelSpace]
-- **GitHub Repository**: [[GitHub Repository URL](https://github.com/EarnestAxis5546/RebelSpace/)]
+- **Project Name**: []
+- **GitHub Repository**: [[GitHub Repository URL](https://github.com/]
 - **Discord Link**: [[Discord Invite Link](https://discord.gg/YQGK55KX2z)]
 
 ---
